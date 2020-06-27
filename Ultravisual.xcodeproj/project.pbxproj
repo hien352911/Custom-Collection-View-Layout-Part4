@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2EB2BE8624A6E974003D89E4 /* CCVL08-Ultravisual-Featured-Cell-LectureSlides.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2EB2BE8524A6E974003D89E4 /* CCVL08-Ultravisual-Featured-Cell-LectureSlides.pdf */; };
+		2EB2BE8924A6FADF003D89E4 /* CCVL09-Ultravisual-Fading-Content-LectureSlides.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2EB2BE8824A6FADF003D89E4 /* CCVL09-Ultravisual-Fading-Content-LectureSlides.pdf */; };
+		2EB2BE8B24A6FAE4003D89E4 /* CCVL09-Ultravisual-Fading-Content-Challenge-E.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2EB2BE8A24A6FAE4003D89E4 /* CCVL09-Ultravisual-Fading-Content-Challenge-E.pdf */; };
 		7B7B5EF81ABC4087005BDA81 /* UIColor+Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7B5EF71ABC4087005BDA81 /* UIColor+Palette.swift */; };
 		7B963DF01ABC36A900748FFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B963DEF1ABC36A900748FFC /* AppDelegate.swift */; };
 		7B963DF51ABC36A900748FFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B963DF31ABC36A900748FFC /* Main.storyboard */; };
@@ -25,6 +27,8 @@
 
 /* Begin PBXFileReference section */
 		2EB2BE8524A6E974003D89E4 /* CCVL08-Ultravisual-Featured-Cell-LectureSlides.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "CCVL08-Ultravisual-Featured-Cell-LectureSlides.pdf"; sourceTree = "<group>"; };
+		2EB2BE8824A6FADF003D89E4 /* CCVL09-Ultravisual-Fading-Content-LectureSlides.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "CCVL09-Ultravisual-Fading-Content-LectureSlides.pdf"; sourceTree = "<group>"; };
+		2EB2BE8A24A6FAE4003D89E4 /* CCVL09-Ultravisual-Fading-Content-Challenge-E.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "CCVL09-Ultravisual-Fading-Content-Challenge-E.pdf"; sourceTree = "<group>"; };
 		7B7B5EF71ABC4087005BDA81 /* UIColor+Palette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Palette.swift"; sourceTree = "<group>"; };
 		7B963DEA1ABC36A900748FFC /* Ultravisual.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ultravisual.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B963DEE1ABC36A900748FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 		2EB2BE8324A6E958003D89E4 /* Documents */ = {
 			isa = PBXGroup;
 			children = (
+				2EB2BE8724A6FACC003D89E4 /* 10.Ultravisual – Fading Content */,
 				2EB2BE8424A6E968003D89E4 /* 9.Ultravisual – Featured Cell */,
 			);
 			name = Documents;
@@ -67,6 +72,15 @@
 				2EB2BE8524A6E974003D89E4 /* CCVL08-Ultravisual-Featured-Cell-LectureSlides.pdf */,
 			);
 			name = "9.Ultravisual – Featured Cell";
+			sourceTree = "<group>";
+		};
+		2EB2BE8724A6FACC003D89E4 /* 10.Ultravisual – Fading Content */ = {
+			isa = PBXGroup;
+			children = (
+				2EB2BE8824A6FADF003D89E4 /* CCVL09-Ultravisual-Fading-Content-LectureSlides.pdf */,
+				2EB2BE8A24A6FAE4003D89E4 /* CCVL09-Ultravisual-Fading-Content-Challenge-E.pdf */,
+			);
+			name = "10.Ultravisual – Fading Content";
 			sourceTree = "<group>";
 		};
 		7B963DE11ABC36A900748FFC = {
@@ -237,8 +251,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EB2BE8924A6FADF003D89E4 /* CCVL09-Ultravisual-Fading-Content-LectureSlides.pdf in Resources */,
 				7B963DF51ABC36A900748FFC /* Main.storyboard in Resources */,
 				7B963DFA1ABC36A900748FFC /* LaunchScreen.xib in Resources */,
+				2EB2BE8B24A6FAE4003D89E4 /* CCVL09-Ultravisual-Fading-Content-Challenge-E.pdf in Resources */,
 				2EB2BE8624A6E974003D89E4 /* CCVL08-Ultravisual-Featured-Cell-LectureSlides.pdf in Resources */,
 				7B963DF71ABC36A900748FFC /* Images.xcassets in Resources */,
 				7B963E1A1ABC3C8300748FFC /* Inspirations.xcassets in Resources */,
