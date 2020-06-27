@@ -136,5 +136,12 @@ class UltravisualLayout: UICollectionViewLayout {
     override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
     return true
   }
-  
+ 
+    /* Method is called when user scroll and release hand */
+    override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint {
+        // proposedContentOffset.y: offset of collection
+        let itemIndex = round(proposedContentOffset.y / dragOffset)
+        let yOffset = itemIndex * dragOffset
+        return CGPoint(x: 0, y: yOffset)
+    }
 }
