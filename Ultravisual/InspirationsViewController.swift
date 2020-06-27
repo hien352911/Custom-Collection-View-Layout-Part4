@@ -23,6 +23,7 @@ class InspirationsViewController: UICollectionViewController {
       view.backgroundColor = UIColor(patternImage: patternImage)
     }
     collectionView!.backgroundColor = UIColor.clear
+    collectionView!.decelerationRate = .fast
     
     let layout = UltravisualLayout()
     collectionView.collectionViewLayout = layout
