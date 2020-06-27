@@ -75,6 +75,50 @@ class UltravisualLayout: UICollectionViewLayout {
     override func prepare() {
         cache.removeAll(keepingCapacity: false)
     
+        let standarHeight = UltravisualLayoutConstants.Cell.standardHeight
+        let featureHeight = UltravisualLayoutConstants.Cell.featuredHeight
+        
+        var frame = CGRect.zero
+        var y: CGFloat = 0
+        
+        for item in 0..<numberOfItems {
+            let indexPath = IndexPath(item: item, section: 0)
+            let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
+            // Items with higher index values appear on top of items with lower values.
+            attributes.zIndex = item
+            var height = standarHeight
+            if indexPath.item == featuredItemIndex {
+                /*
+                 standarHeight = 100
+                 nextItemPercentageOffset = {-1, 1} (chạy từ -1 đến 1)
+                 yOffset = {-100, 100}
+                 */
+                let yOffset = standarHeight * nextItemPercentageOffset
+                /*
+                 Có 3 cách kéo dài 1 cell or header của collection view
+                 C1: increase height
+                 C2: increase y theo contentOffset của collection view (vì khi kéo xuống, offset của content size tăng, mà cell nằm trong content size (cell 0, origin.y = 0), nên cell cũng bị kéo cùng với content size (thay đổi origin của cha thì view con bị di chuyển theo). Muốn cell vẫn giữ ở top thì increase y của cell = đúng với content offset
+                 C3: increase height và increase y theo contentOffset của collection view
+                 */
+                y = collectionView!.contentOffset.y - yOffset
+                height = featureHeight
+            } else if indexPath.item == (featuredItemIndex + 1) && indexPath.item != numberOfItems {
+                /*
+                 standarHeight = const
+                 maxY = ⬆️⬆️ y
+                 */
+                let maxY = y + standarHeight
+                /*
+                 height = { standarHeight, standarHeight + 280 }
+                 */
+                height = standarHeight + max((featureHeight - standarHeight) * nextItemPercentageOffset, 0)
+                y = maxY - height
+            }
+            frame = CGRect(x: 0, y: y, width: width, height: height)
+            attributes.frame = frame
+            cache.append(attributes)
+            y = frame.maxY
+        }
   }
   
   /* Return all attributes in the cache whose frame intersects with the rect passed to the method */
