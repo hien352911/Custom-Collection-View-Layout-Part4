@@ -57,5 +57,8 @@ class InspirationCell: UICollectionViewCell {
         
         let scale = max(delta, 0.5)
         titleLabel.transform = CGAffineTransform(scaleX: scale, y: scale)
+        
+        timeAndRoomLabel.alpha = delta
+        speakerLabel.alpha = delta
     }
 }
