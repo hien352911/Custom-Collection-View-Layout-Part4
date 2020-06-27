@@ -39,12 +39,24 @@
                                             <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inspiration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zkc-fJ-7aK">
+                                            <rect key="frame" x="0.0" y="78" width="200" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="bKI-4z-No6"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="38"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </view>
                                 <constraints>
                                     <constraint firstItem="cR8-lB-BJY" firstAttribute="centerY" secondItem="n3U-hs-Bjw" secondAttribute="centerY" id="9Le-sg-67h"/>
                                     <constraint firstItem="yeg-RF-C2E" firstAttribute="leading" secondItem="n3U-hs-Bjw" secondAttribute="leading" id="HXi-pO-Dk4"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zkc-fJ-7aK" secondAttribute="trailing" id="Lrd-J9-K7U"/>
+                                    <constraint firstItem="Zkc-fJ-7aK" firstAttribute="leading" secondItem="n3U-hs-Bjw" secondAttribute="leading" id="U6j-v4-YSg"/>
                                     <constraint firstItem="yeg-RF-C2E" firstAttribute="top" secondItem="n3U-hs-Bjw" secondAttribute="top" id="UOj-Zx-cvg"/>
+                                    <constraint firstItem="Zkc-fJ-7aK" firstAttribute="centerY" secondItem="n3U-hs-Bjw" secondAttribute="centerY" id="d3x-gu-I1u"/>
                                     <constraint firstAttribute="bottom" secondItem="yeg-RF-C2E" secondAttribute="bottom" id="hEY-pg-PDg"/>
                                     <constraint firstAttribute="trailing" secondItem="yeg-RF-C2E" secondAttribute="trailing" id="nOm-78-xkF"/>
                                     <constraint firstItem="cR8-lB-BJY" firstAttribute="leading" secondItem="n3U-hs-Bjw" secondAttribute="leading" id="p4C-9p-wUu"/>
@@ -53,6 +65,7 @@
                                 <connections>
                                     <outlet property="imageCoverView" destination="yeg-RF-C2E" id="DD8-1P-7s9"/>
                                     <outlet property="imageView" destination="cR8-lB-BJY" id="gFr-6B-cvW"/>
+                                    <outlet property="titleLabel" destination="Zkc-fJ-7aK" id="9lN-z7-bkP"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
