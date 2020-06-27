@@ -13,12 +13,16 @@ class InspirationCell: UICollectionViewCell {
   @IBOutlet private weak var imageView: UIImageView!
   @IBOutlet private weak var imageCoverView: UIView!
     @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var timeAndRoomLabel: UILabel!
+    @IBOutlet private weak var speakerLabel: UILabel!
   
   var inspiration: Inspiration? {
     didSet {
       if let inspiration = inspiration {
         imageView.image = inspiration.backgroundImage
         titleLabel.text = inspiration.title
+        timeAndRoomLabel.text = inspiration.roomAndTime
+        speakerLabel.text = inspiration.speaker
       }
     }
   }

@@ -48,16 +48,40 @@
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time, Room" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJd-oI-Wp8">
+                                            <rect key="frame" x="8" y="122" width="184" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="Xij-dl-bi0"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speaker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kd3-ag-kha">
+                                            <rect key="frame" x="8" y="143" width="184" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="hGw-pv-9A4"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </view>
                                 <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="uJd-oI-Wp8" secondAttribute="trailing" id="1mu-Kp-zWg"/>
                                     <constraint firstItem="cR8-lB-BJY" firstAttribute="centerY" secondItem="n3U-hs-Bjw" secondAttribute="centerY" id="9Le-sg-67h"/>
                                     <constraint firstItem="yeg-RF-C2E" firstAttribute="leading" secondItem="n3U-hs-Bjw" secondAttribute="leading" id="HXi-pO-Dk4"/>
                                     <constraint firstAttribute="trailing" secondItem="Zkc-fJ-7aK" secondAttribute="trailing" id="Lrd-J9-K7U"/>
+                                    <constraint firstItem="kd3-ag-kha" firstAttribute="leading" secondItem="n3U-hs-Bjw" secondAttribute="leadingMargin" id="ToC-gm-71w"/>
                                     <constraint firstItem="Zkc-fJ-7aK" firstAttribute="leading" secondItem="n3U-hs-Bjw" secondAttribute="leading" id="U6j-v4-YSg"/>
                                     <constraint firstItem="yeg-RF-C2E" firstAttribute="top" secondItem="n3U-hs-Bjw" secondAttribute="top" id="UOj-Zx-cvg"/>
+                                    <constraint firstItem="uJd-oI-Wp8" firstAttribute="leading" secondItem="n3U-hs-Bjw" secondAttribute="leadingMargin" id="bug-I1-FcZ"/>
                                     <constraint firstItem="Zkc-fJ-7aK" firstAttribute="centerY" secondItem="n3U-hs-Bjw" secondAttribute="centerY" id="d3x-gu-I1u"/>
+                                    <constraint firstItem="uJd-oI-Wp8" firstAttribute="top" secondItem="Zkc-fJ-7aK" secondAttribute="bottom" id="fbf-et-86w"/>
                                     <constraint firstAttribute="bottom" secondItem="yeg-RF-C2E" secondAttribute="bottom" id="hEY-pg-PDg"/>
+                                    <constraint firstItem="kd3-ag-kha" firstAttribute="top" secondItem="uJd-oI-Wp8" secondAttribute="bottom" id="ipG-Qh-dih"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="kd3-ag-kha" secondAttribute="trailing" id="lZe-jd-SXy"/>
                                     <constraint firstAttribute="trailing" secondItem="yeg-RF-C2E" secondAttribute="trailing" id="nOm-78-xkF"/>
                                     <constraint firstItem="cR8-lB-BJY" firstAttribute="leading" secondItem="n3U-hs-Bjw" secondAttribute="leading" id="p4C-9p-wUu"/>
                                     <constraint firstAttribute="trailing" secondItem="cR8-lB-BJY" secondAttribute="trailing" id="qMm-c4-ofs"/>
@@ -65,6 +89,8 @@
                                 <connections>
                                     <outlet property="imageCoverView" destination="yeg-RF-C2E" id="DD8-1P-7s9"/>
                                     <outlet property="imageView" destination="cR8-lB-BJY" id="gFr-6B-cvW"/>
+                                    <outlet property="speakerLabel" destination="kd3-ag-kha" id="xXR-wn-KDz"/>
+                                    <outlet property="timeAndRoomLabel" destination="uJd-oI-Wp8" id="YQL-gD-PjD"/>
                                     <outlet property="titleLabel" destination="Zkc-fJ-7aK" id="9lN-z7-bkP"/>
                                 </connections>
                             </collectionViewCell>
